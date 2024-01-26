@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Camera
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - 
+  - 
+  - Laser
+  - 
+  - 
+  - 
+  - Ground
+  - Bouncy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1572018369
+    locked: 0
+  - name: Terrain
+    uniqueID: 3965574113
+    locked: 0
+  - name: Objects
+    uniqueID: 4269713015
+    locked: 0
+  - name: Player
+    uniqueID: 457297331
+    locked: 0

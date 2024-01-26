@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Style.uss?fileID=7433441132597879392&amp;guid=1281648dcef372748ae39bbab30c8dc3&amp;type=3#Style" />
+    <ui:VisualElement name="Screen" style="flex-grow: 1; background-color: rgb(255, 255, 255);">
+        <ui:VisualElement name="Panel" style="left: 20%; top: 10%; right: 20%; bottom: 10%; position: absolute;">
+            <ui:VisualElement name="PlayerSelection" class="panel" style="flex-grow: 1; display: flex;">
+                <ui:TextField picking-mode="Ignore" label="Display name" name="Name" class="inputField" />
+                <ui:DropdownField label="Dropdown" index="0" choices="Keyboard + mouse,Controller,Touch" name="InputType" class="dropdown" />
+                <ui:Button text="PLAY" display-tooltip-when-elided="true" name="Play" class="button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ServerBrowser" class="panel" style="flex-grow: 1; display: flex;">
+                <ui:Label text="Join Server:" display-tooltip-when-elided="true" />
+                <ui:VisualElement name="ServerBrowserHeader" style="flex-direction: row;">
+                    <ui:Label text="Host Name" display-tooltip-when-elided="true" style="width: 40%;" />
+                    <ui:Label text="Map Name" display-tooltip-when-elided="true" style="width: 40%;" />
+                    <ui:Label text="Players" display-tooltip-when-elided="true" style="width: 20%;" />
+                </ui:VisualElement>
+                <ui:ListView focusable="true" name="ServerBrowser" horizontal-scrolling="false" fixed-item-height="40" />
+                <ui:Button text="Join Room" display-tooltip-when-elided="true" name="JoinRoom" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ServerCreator" class="panel" style="flex-grow: 1; display: flex; visibility: visible;">
+                <ui:Label text="Create Server:" display-tooltip-when-elided="true" />
+                <ui:Button text="Create Room" display-tooltip-when-elided="true" name="CreateRoom" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
